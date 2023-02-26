@@ -164,7 +164,7 @@ def test_connection():
                     bUsiness=business(email=email,category=category, name=name,amount=amount,equity=equity,description=description)
                     db.session.add(bUsiness)
                     db.session.commit()
-                    flash("Succcesfully saved your details. You can now check if there is an investor avaialable for you.", "success")
+                    flash("Succcesfully saved your details. Now Investors can check your business!", "success")
                     return redirect('/')
                 else:
                     flash("Invalid Credentials", "danger")
